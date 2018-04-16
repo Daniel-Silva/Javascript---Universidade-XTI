@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        
+        <meta charset="utf-8">
+        <title>Aula 8 - Estrutura condicional switch</title>
+
+        <!-- CSS Style -->
+        <link rel="stylesheet" type="text/css" href="css/aula8_estrutura_condicional_switch_mes.css">
+
+        <!-- Javascript -->
+        <script type="text/javascript" src="js/aula8_estrutura_condicional_switch_mes.js"></script>
+
+               
+    </head>
+
+    <body>
+        
+        <header>
+            <h1>Aula 8 - Estrutura condicional switch</h1>
+        </header>
+
+        <section>
+            <h3>Verificado mês</h3>
+           
+        <!-- Formulário Mês -->
+
+            <form id="form_mes">
+                <div id="form_group">
+
+                    <!-- form pergunta -->
+                    <div class="form_control">
+                        <input type="number" name="date_number" id="date_number" placeholder="1 - 12" class="input_control">
+                    </div>
+
+                    <!-- form resposta -->
+                    <div class="form_control">
+                        <input type="text" name="date_text" id="date_text" placeholder="O mês é..." class="input_control" disabled="disabled">
+                    </div>
+
+                    <!-- Botão enviar -->
+                    <div class="btn" onclick="verificarMes();">
+                        <span>Verificar mês</span>
+                    </div>
+
+                </div>
+            </form>
+
+            
+        </section>
+
+    </body>
+
+</html>

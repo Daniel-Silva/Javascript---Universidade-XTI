@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        
+        <meta charset="utf-8">
+        <title>Aula 28 - DOM</title>
+
+        <!-- CSS Style -->
+        <link rel="stylesheet" type="text/css" href="css/aula28_DOM.css">
+
+        <!-- Javascript -->
+        <script type="text/javascript" src="js/aula28_DOM.js"></script>
+
+               
+    </head>
+
+    <body>
+        
+        <header>
+            <h1>Aula 28 - DOM</h1>
+        </header>
+
+        <section>
+            
+            <div class="container">
+                <div class="form_group">
+                    <!-- Formulário -->
+                    <form id="form_control">
+                        
+                        <!-- Input Text -->
+                        <div class="input_control">
+                            <input type="text" name="movel" id="movel" placeholder="Móvel" class="input_field" required autofocus />
+                        </div>
+                        
+                        <!-- Select -->
+                        <div class="input_control">
+                            <input list="comodos" name="comodos" placeholder="Ambiente" class="input_field">
+                            <datalist id="comodos">
+                                <option value="Sala">
+                                <option value="Cozinha">
+                                <option value="Banheiro">
+                                <option value="Quarto Casal">
+                                <option value="Quarto Criança">
+                                <option value="Lavanderia">
+                            </datalist>
+                        </div>
+                        
+                        <!-- Input Valor -->
+                        <div class="input_control">
+                            <input type="number" name="valor" id="valor" placeholder="Valor R$" class="input_field" min="1" required />
+                        </div>
+                        
+                        <!-- Input Obs -->
+                        <div class="input_control">
+                            <input type="text" name="observacao" id="observacao" placeholder="Obs.:" class="input_field" required />
+                        </div>
+                        
+                        <!-- Botão -->
+                        <div class="btn_control">
+                            <span>Adicionar</span>
+                        </div>
+                        
+                    </form>            
+                </div>
+                
+                <!-- Tabela Móveis -->
+                <div class="table_group">
+                    <table  class="table_control">
+                         <caption class="caption_control">Tabela de móveis</caption>  
+                         <thead class="sala_control">    
+                            <tr>      
+                                <th>Móveis</th>      
+                                <th>Ambiente</th>
+                                <th>Valor</th>
+                                <th>Obs.</th>
+                            </tr>  
+                        </thead>  
+                        <tbody class="sala_control" id="tbody_control">    
+                     
+                        </tbody>           
+                    </table>
+                    
+                    <div class="form_total">
+                        <form id="form_total">
+                            <div class="input_total">
+                                <input type="text" name="vtotal" id="vtotal" placeholder="Valor total R$" class="field_total" disabled>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            
+            </div >
+
+        </section>
+
+
+    </body>
+
+</html>

@@ -1,0 +1,82 @@
+html {background: #E8E7E7;}
+
+body {
+    background: #FFF;
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px;
+
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+       -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+header {
+    background-color: #009688;
+    margin: 0 auto;
+    padding: 50px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+section h1, p {
+    display: block;
+    text-align: center;
+}
+
+/* Formulário */
+
+#form_group {
+    width: 50%;
+    margin: 0 auto;
+
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+       -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#form_group .form_control {
+    width: 37%;
+    margin: 0 auto;
+}
+
+.form_control .input_control{
+    height: 30px;
+    border-color: #009688;
+    border-radius: 0;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    box-shadow: none;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.form_control .input_control:last-child {
+  margin-right: 0;
+}
+
+.form_control .input_control:focus {
+    border-color: #FFF;
+}
+
+div.btn {
+    margin: 0 auto;
+    width: 250px;
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: #607D8B;
+    font-size: 16px;
+    text-align: center;
+    color: #FFF;
+
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+       -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+div.btn:hover {
+    background-color: #455A64;
+}
+        

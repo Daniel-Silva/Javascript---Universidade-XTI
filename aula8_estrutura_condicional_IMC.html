@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        
+        <meta charset="utf-8">
+        <title>Aula 8 - Estrutura Condicional / Calculando IMC - switch</title>
+
+        <!-- CSS Style -->
+        <link rel="stylesheet" type="text/css" href="css/aula8_estrutura_condicional_IMC.css">
+
+        <!-- Javascript -->
+        <script type="text/javascript" src="js/aula8_estrutura_condicional_IMC.js"></script>
+
+               
+    </head>
+
+    <body>
+        
+        <header>
+            <h1>Aula 8 - Estrutura Condicional / Calculando IMC - switch</h1>
+        </header>
+
+        <section>
+            <h1> Vamos calcular seu IMC?</h1>
+            <p> Simples! Basta preencher os campos abaixo.</p>
+
+        <!-- Formulário para calcular IMC -->
+            <div class="form-group">
+
+                <form id="form_imc">
+                                                              
+                    <h3>Cálculo de IMC</h3>
+                    
+                    <div class="input-group">
+
+                        <!-- Form Kilos -->
+                        <div class="input-field">
+                            <input type="number" name="kilos" id="kilos" placeholder="Seu peso - kg" class="form-control" />
+                        </div>
+
+                        <!-- Form Metros -->
+                        <div class="input-field" id="input-metros">
+                            <input type="number" name="metros" id="metros" placeholder="Sua altura - m" class="form-control" />
+                        </div>
+                        
+                        <!-- Form centimetros -->
+                        <div class="input-field" id="input-centimetros">
+                            <input type="number" name="centimetros" id="centimetros" placeholder="Sua altura - cm" class="form-control" />
+                        </div>
+
+                        <!-- Form resultado -->
+                        <div class="input-field">
+                            <input type="text" name="imc" id="imc" placeholder="IMC" disabled="disabled" class="form-control" />
+                        </div>
+
+                        <!-- Form comparação tabela -->
+                        <div class="input-field">
+                            <input type="text" name="table_imc" id="table_imc" placeholder="Tabela IMC" disabled="disabled" class="form-control" />
+                        </div>
+
+                        <!-- Botão enviar -->
+                        <div class="btn" onclick="calcularIMC();">
+                            <span>Calular</span>
+                        </div>
+
+                    </div>
+
+               </form>
+
+            </div>
+
+        </section>
+
+    </body>
+
+</html>

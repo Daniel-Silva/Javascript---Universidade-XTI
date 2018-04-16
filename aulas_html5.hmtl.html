@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        
+        <meta charset="utf-8">
+        <title>Aulas de HTML 5</title>
+
+        <!-- CSS Style -->
+        <link rel="stylesheet" type="text/css" href="css/aulas_html5.css">
+
+        <!-- Javascript -->
+        <script type="text/javascript" src="js/aulas_html5.js"></script>
+
+               
+    </head>
+
+    <body>
+        
+        <header>
+            <h1>Aulas de HTML 5</h1>
+        </header>
+
+        <section>
+            
+            <div contenteditable="true">
+            	<h1> Título da página </h1>
+                <p> O atributo contenteditable permite que você altere o conteúdo ou não</p>
+            </div>
+            
+            <div>
+            	<p dir="ltr">Texto primeiro</p>
+                <p dir="rtl">Texto segundo</p>
+                <p>O atributo dir define a direção na qual se apresenta o texto</p>
+            </div>
+            
+            <div draggable="true">
+            	<p> O atributo draggable torna um objeto arrastável junto com javascript</p>
+            </div>
+            
+            <div><p>O atributo hidden é utilizado para ativar ou desativar uma div</p></div>
+            
+            <form>
+              	<label for="text">O atributo spellcheck é utilizado para corretor automático</label>
+            	<input type="text" name="text" id="text" placeholder="spellcheck" spellcheck="true"
+            </form>
+            
+            <div>
+            	<p tabindex="1">Texto 1</p>
+                <p tabindex="4">Texto 2</p>
+                <p tabindex="2">Texto 3</p>
+                <p tabindex="3">O atributo tabindex é utilizado para permitir utilizar o tab do teclado como tecla de atalho</p>
+            </div>
+            
+            <div>
+            	<p title="Título do parágrafo">O atributo title permite definir um título para um elemento onde ajudará na acessibilidade do site</p>
+            </div>
+            <div>
+            	<p>accesskey permite colocar uma tecla de atalho para um link</p>
+            </div>
+            
+            <article>
+            	<p>A tag article te permite inserir um artigo ao documento</p>
+            </article>
+            <aside>
+            	<p>A tag aside permite criar uma navegação para um conteúdo relacionado</p>
+            </aside>
+            
+            <div>
+            	<p>Abaixo um exemplo de como utilizar datalist</p>
+            	<label for="cursostest">Cursos:</label>
+                <input type="text" list="cursos" id="cursostest" placeholder="datalist" />
+                <datalist id="cursos">
+                	<option value="Dreamweaver" />
+                    <option value="Flash" />
+                    <option value="CSS" />
+                    <option value="CSS3" />
+                    <option value="HTML5" />
+                    <option value="Javascript" />
+                    <option value="Bootstrap" />
+                </datalist>
+            </div>
+            
+            <div>
+            	<p>abaixo um exeplo de como utilizar details summary</p>
+            	<details>
+                	<summary>Cursos IAG</summary>
+                    <dl>
+                    	<dt>Daniel Silva</dt>
+                        <dd>Pai: Sim</dd>
+                        <dd>Feliz: Sim</dd>
+                    </dl>
+                      <dl>
+                    	<dt>Matheus</dt>
+                        <dd>Filho: Sim</dd>
+                        <dd>Feliz: Sim</dd>
+                    </dl>
+                </details>
+            </div>
+            
+            <div>
+            	<p> Abaixo um exemplo de figure e figcaption com imagens</p>
+                <figure>
+                	<img src="img/img_disponiveis.png" alt="img">
+                    <figcaption>Um exemplo de logotipo</figcaption>
+                </figure>
+            </div>
+            <div>
+            	<p> Abaixo um exemplo de figure e figcaption com vídeo</p>
+                <figure>
+                	<video src="img/videos/skydivers.mp4"></video>
+                    <figcaption>Pulando de paraquedas</figcaption>
+                </figure>
+            </div>
+            
+            <div>
+                <p>Abaixo um exemplo utilizando a tag output</p>
+                <h3> Curso Affects CS5: R$ 109,00</h3>
+                <form name="formulario_vendas" method="get" action="">
+
+                    <label>Quantidade:<input type="text" name="qtde" /></label>
+                    <p>Valor total: R$<output name="vtotal"></output> </p>
+                </form>
+            </div>
+            
+            <div>
+            
+                <h2> Carregando vídeo</h2>
+                <p>Progresso<progress id="p" max="100"><span>0</span>%</progress></p>                
+            </div>
+            
+            <div>
+                <p>Abaixo um exemplo de áudio</p>
+                <audio controls>
+                    <source  src="Sons/Psy_Trance.mp3" type="audio/mpeg" media="screen">   
+                </audio>
+            </div>
+            
+            <div>
+                <p>Abaixo um exemplo de vídeo</p>
+                <video controls loop>
+                    <source  src="Sons/Psy_Trance.mp3" type="video/mp4" media="screen">   
+                </video>
+            </div>
+            
+            <div>
+                <p>Abaixo um exemplo de autofocus</p>
+                <form name="form1" method="post" action="">
+                    <label for="textfield"></label>
+                    Email
+                    <input type="email" name="textfield" id="textfield" placeholder="email@servidor.com.br" autofocus>
+                </form>
+            
+            </div>
+            <div>
+                <p>Abaixo um exemplo de required</p>
+                <form name="form1" method="post" action="">
+                    <label for="textfield"></label>
+                    Email
+                    <input type="email" name="textfield" id="textfield" placeholder="email@servidor.com.br" autofocus required>
+                    <input type="submit" name="buttom" id="buttom" value="Enviar">
+                </form>
+            
+            </div>
+
+        </section>
+
+    </body>
+
+</html>
